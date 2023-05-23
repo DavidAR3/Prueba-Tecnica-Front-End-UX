@@ -1,0 +1,16 @@
+<!-- Template Offers -->
+<div class="offers">
+    <h2>{{offersTitle}}</h2>
+    <div class="cards">
+        <!-- Los card se construyen mediante un For desde un arreglo -->
+        <div class="card" *ngFor="let offer of offers">
+            <img [src]="offer.imageUrl"
+                [title]="offer.offerCity">
+            <div>
+                <h3>{{offer.offerCity}}</h3>
+                <p>From {{offer.offersPrice | currency: 'USD':'symbol':'1.2-2'}}</p>
+            </div>
+            <span></span>
+        </div>
+    </div>
+</div>

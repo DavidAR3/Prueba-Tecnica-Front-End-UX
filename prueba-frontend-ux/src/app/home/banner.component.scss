@@ -1,0 +1,46 @@
+// Estilos Banner principal
+.banner{
+    margin-bottom: 36px;
+    padding: 124px 96px;
+    background-image: url(../../../src/assets/images/banner1.jpg);
+    background-size: cover;
+    background-position-x: center;
+    .banner-continer{
+        max-width: 1440px;
+        margin: auto;
+        h1{
+            margin-bottom: 8px;
+            color: var(--blanco);
+        }
+        p{
+            margin-bottom: 44px;
+            max-width: 400px;
+            color: var(--blanco);   
+        }
+        button{
+            width: 152px;
+            height: 38px;
+            color: var(--blanco);
+            background-color: var(--rojo1);
+            border: unset;
+            border-radius: 19px;
+        }
+    }
+}
+
+// Estilos banner princiapl para mobile tamaño celular 
+// No se requieren estilos para tablet por que los de Desktop funcionan correctamente en este tamaño
+@media screen and (max-width: 767px) {
+    .banner{
+        padding: 150px 20px;
+        background-size: 1400px;
+        .banner-continer{
+            h1{
+                font-size: 32px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+}

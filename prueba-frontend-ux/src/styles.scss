@@ -1,0 +1,53 @@
+//Fuente Tipográfica
+@font-face {
+    font-family: 'Roboto';
+    src: url('../src/assets/fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+// Variables de Colores
+:root {
+    --blanco: #ffffff;
+    --negro: #000000;
+    --gris1: #181823;
+    --gris2: #E7E6F6;
+    --gris3: #F1F0FF;
+    --gris4: #9292A0;
+    --rojo1: #C20114;
+    --celeste1: #C0EEF2;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, p, span, a{
+    margin: unset;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-size: 58px;
+}
+
+h2{
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+h5{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    margin: unset;
+    li{
+        list-style: none;
+    }
+}

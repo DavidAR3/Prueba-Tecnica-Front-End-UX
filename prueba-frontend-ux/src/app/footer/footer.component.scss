@@ -1,0 +1,131 @@
+// Estilos Footer
+.footer{
+    .container-footer-dark{
+        background-color: var(--gris2);
+        .footer-dark{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 1440px;
+            margin: auto;
+            padding: 60px 30px 30px;
+            .logo{
+                padding-top: 130px;
+            }
+            .footer-links{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                ul{
+                    padding: unset;
+                    h5{
+                        min-height: 50px;
+                        margin-bottom: 10px;
+                    }
+                    li{
+                        font-size: 18px;
+                        margin-bottom: 14px;
+                        padding-left: 10px;
+                        a{
+                            color: var(--gris1);
+                        }
+                    }
+                }
+            }
+            .social-network{
+                width: 100%;
+                padding-right: 36px;
+                text-align: right;
+                h5{
+                    margin-right: 105px;
+                }
+                svg{
+                    margin: 8px;
+                }
+            }
+        }
+    }
+    .container-footer-light{
+        background-color: var(--gris3);
+        .footer-light{
+            max-width: 1440px;
+            margin: auto;
+            padding: 16px 30px;
+            ul{
+                li{
+                    display: inline-block;
+                    margin-right: 10px;
+                    padding-right: 10px;
+                    border-right: 1px solid var(--gris4);
+                    a{
+                        color: var(--gris4);
+                    }
+                    &:last-child{
+                        border-right: unset;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Estilos del Footer para mobile Tablet
+@media screen and (max-width: 991px) {
+    .footer{
+        .container-footer-dark{
+            .footer-dark{
+                grid-template-columns: 1fr;
+                .logo{
+                    margin-bottom: 64px;
+                    padding-top: unset;
+                }
+                .social-network{
+                    margin-top: 36px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+// Estilos del Footer para mobile celular
+@media screen and (max-width: 767px) {
+    .footer{
+        .container-footer-dark{
+            .footer-dark{
+                grid-template-columns: 1fr;
+                padding: 20px;
+                .logo{
+                    margin-bottom: 64px;
+                    padding-top: unset;
+                    text-align: left;
+                    svg{
+                        max-width: 180px;
+                    }
+                }
+                .footer-links{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    ul{
+                        margin-bottom: 36px;
+                        h5{
+                            margin-bottom: unset;
+                        }
+                    }
+                }
+            }
+        }
+        .container-footer-light{
+            .footer-light{
+                padding: 10px;
+                ul{
+                    padding: unset;
+                    li{
+                        a{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
